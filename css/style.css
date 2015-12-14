@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(176, 185, 158);
+}
+
+#container{
+    width: 960px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+header, footer, .counter, .myForm{
+    margin: 20px 0;
+}
+
+header, footer{
+    background-color: rgb(125, 132, 112);
+    padding: 10px 0;
+    flex-grow: 1;
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+    padding: 10px 0;
+    flex-grow: 2;
+    background-color: rgb(232, 239, 217);
+    box-shadow: 5px 5px 5px rgb(125, 132, 112);
+}
+
+.counter{
+    flex-grow: 1;
+    border: 1px solid black;
+    min-height: 300px;
+    margin-left: 20px;
+}
+
+.counter h1{
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.myForm{
+    flex-grow: 2;
+}
+
+.myForm input{
+    height: 30px;
+    width: 230px;
+}
+
+.myForm button{
+    margin-left: 10px;
+}
+
+button{
+    height: 30px;
+    width: 120px;
+    background-color: rgb(125, 132, 112);
+}
+
+ul{
+    margin-top: 20px;
+    text-align: left;
+}
+
+ul li{
+    padding-left: 20px;
+    text-decoration: none;
+}
+
+footer{
+    text-align: right;
+}
+
+footer p{
+    margin-right: 20px;
+}
