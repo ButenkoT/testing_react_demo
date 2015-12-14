@@ -6,9 +6,9 @@ const Footer = require('./Footer');
 
 const Hello = React.createClass({
   render(){
-    return(
+    return (
       <div>
-        <Header name="SydJS" />
+        <Header name="SydJS"/>
         <Main />
         <Footer />
       </div>

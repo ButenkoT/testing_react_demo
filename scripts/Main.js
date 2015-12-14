@@ -4,16 +4,12 @@ const Form = require('./Form');
 
 const Main = React.createClass({
   render(){
-    return(
+    return (
       <div className="main">
         <Counter />
-        <Form onSubmit={this.onSubmit}/>
+        <Form />
       </div>
     );
-  },
-
-  onSubmit: function(input){
-    console.log(input);
   }
 });
 

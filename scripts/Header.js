@@ -2,7 +2,7 @@ const React = require('react');
 
 const Header = React.createClass({
   render(){
-    return(
+    return (
       <header>
         <h1>Hello {this.props.name}</h1>
       </header>

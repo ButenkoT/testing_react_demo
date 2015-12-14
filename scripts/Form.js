@@ -1,41 +1,51 @@
 const React = require('react');
-const List = require('./List');
-
-let comments = ['hello', 'world'];
+const Comments = require('./Comments');
 
 const Form = React.createClass({
 
   getInitialState() {
-    return {comment: ''};
+    return {
+      comment: '',
+      comments: ['hello', 'world']
+    };
   },
 
   onChange(event) {
-    this.setState({comment: event.target.value});
+    this.setState({
+      comment: event.target.value
+    });
   },
 
   sendComment(event) {
     event.preventDefault();
-    comments.push(this.state.comment);
-    this.setState({comment: event.target.value});
-    console.log(comments);
+
+    const {comments, comment} = this.state;
+
+    this.setState({
+      comment: '',
+      comments: comments.concat(comment)
+    });
+
   },
 
   render() {
+    const {comments, comment} = this.state;
+
     return (
       <div className="myForm">
         <form onSubmit={this.sendComment}>
           <input
-            value={this.state.comment}
+            value={comment}
             type="text"
             placeholder="Your comment"
             onChange={this.onChange}
             autoFocus={true}
           />
 
-          <button type="submit" value="Post">Submit</button>
+          <button type="submit">Submit</button>
         </form>
 
-        <List comments={comments}/>
+        <Comments comments={comments}/>
       </div>
     );
   }

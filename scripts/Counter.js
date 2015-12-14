@@ -13,7 +13,7 @@ const Counter = React.createClass({
     }
   },
 
-  render: function(){
+  render: function () {
     return (
       <div className="counter">
         <h1>Count: {this.state.count}</h1>
