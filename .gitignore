@@ -2,3 +2,5 @@
 
 .idea/
 /npm-debug.log
+
+!/build/
