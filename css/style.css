@@ -1,14 +1,14 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: rgb(176, 185, 158);
 }
 
-#container{
+#container {
     width: 960px;
     margin: 0 auto;
     text-align: center;
@@ -16,17 +16,17 @@ body{
     flex-direction: column;
 }
 
-header, footer, .counter, .myForm{
+header, footer, .counter, .myForm {
     margin: 20px 0;
 }
 
-header, footer{
+header, footer {
     background-color: rgb(125, 132, 112);
     padding: 10px 0;
     flex-grow: 1;
 }
 
-.main{
+.main {
     display: flex;
     flex-direction: row;
     padding: 10px 0;
@@ -35,53 +35,57 @@ header, footer{
     box-shadow: 5px 5px 5px rgb(125, 132, 112);
 }
 
-.counter{
+.counter {
     flex-grow: 1;
     border: 1px solid black;
     min-height: 300px;
     margin-left: 20px;
 }
 
-.counter h1{
+.counter h1 {
     margin-top: 40px;
     margin-bottom: 20px;
 }
 
-.myForm{
+.myForm {
     flex-grow: 2;
 }
 
-.myForm input{
+.myForm input {
     height: 30px;
     width: 230px;
 }
 
-.myForm button{
+.myForm button {
     margin-left: 10px;
 }
 
-button{
+button {
     height: 30px;
     width: 120px;
     background-color: rgb(125, 132, 112);
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
 }
 
-ul{
+ul {
     margin: 20px 20px 20px 40px;
     text-align: left;
 }
 
-ul li{
+ul li {
     padding-left: 20px;
     text-decoration: none;
     margin-top: 5px;
     font-size: 22px;
 }
 
-footer{
+footer {
     text-align: right;
 }
 
-footer p{
+footer p {
     margin-right: 20px;
 }
