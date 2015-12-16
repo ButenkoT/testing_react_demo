@@ -4,7 +4,8 @@
  
  To start:
  ```
- npm init
+ npm install
+ npm run build
  npm start
  ```
  
