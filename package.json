@@ -6,7 +6,7 @@
   "scripts": {
     "start": "webpack-dev-server",
     "build": "webpack",
-    "test": "babel-node tests/Hello-test.js"
+    "test": "babel-node tests"
   },
   "keywords": [
     "react",

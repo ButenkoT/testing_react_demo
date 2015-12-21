@@ -6,7 +6,8 @@ const Header = require('../scripts/Header');
 const Main = require('../scripts/Main');
 const Footer = require('../scripts/Footer');
 
-test('Hello', function(t){
+
+test('Hello', function (t) {
   const wrapper = shallow(<Hello />);
   t.ok(wrapper.contains(<Header name="SydJS"/>), 'should render Header');
   t.ok(wrapper.contains(<Main />), 'should render Main');
